@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style-alert.css">
 
   
     <style>
@@ -1531,13 +1532,15 @@
 
 
 
-
-
 <!-- Bootstrap JS -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="assets/js/notis.js"></script>
+
+<script src="assets/js/cute-alert.js"></script>
 
 <script>
     function nivel1(){
@@ -1748,6 +1751,8 @@
 
     
 function enviarCorreo() {
+
+   
     
       var nom = document.getElementById("txtNombre").value;
       var emp = document.getElementById("txtEmpresa").value;
@@ -1757,15 +1762,24 @@ function enviarCorreo() {
       var com = document.getElementById("txtComentario").value;
       var tip = document.getElementById("txtTipo").value;
 
+      
       $.ajax({
           type: "GET",
           crossDomain: true,   
           url: "https://amahcarev2.somee.com/requestnoti.ashx?Comando=EnviarConsulta&Nom="+nom+"&Empresa="+emp+"&tel="+tel+"&Email="+cor+"&Estado="+est+"&Desc="+com+"&Tipo="+tip ,
           success: function (result) {
-             alert(result);
+            msgAlert("success", "Mensaje", "Datos enviados");
+             document.getElementById("txtNombre").value = "";
+             document.getElementById("txtEmpresa").value = "";
+             document.getElementById("txtTelefono").value = "";
+             document.getElementById("txtCorreo").value = ""
+             document.getElementById("txtEstado").value = "";
+             document.getElementById("txtComentario").value = "";
+             document.getElementById("txtTipo").value = "";
+
           },
           error: function (jqXmlHttpRequest, textStatus, errorThrown) {
-            alert("Error");
+               msgAlert("error", "Mensaje", "Ocurrio un error");
           }
       });
       
