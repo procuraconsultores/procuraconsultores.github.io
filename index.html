@@ -1762,8 +1762,9 @@ function enviarCorreo() {
       var com = document.getElementById("txtComentario").value;
       var tip = document.getElementById("txtTipo").value;
 
-      
-      $.ajax({
+
+      if(nom != "" or emp != "" or tel != "" or cor != "" or est != "" or com != "" or tipo != ""){
+        $.ajax({
           type: "GET",
           crossDomain: true,   
           url: "https://amahcarev2.somee.com/requestnoti.ashx?Comando=EnviarConsulta&Nom="+nom+"&Empresa="+emp+"&tel="+tel+"&Email="+cor+"&Estado="+est+"&Desc="+com+"&Tipo="+tip ,
@@ -1782,6 +1783,13 @@ function enviarCorreo() {
                msgAlert("error", "Mensaje", "Ocurrio un error");
           }
       });
+      }
+      else{
+        msgAlert("info", "Mensaje", "Agregue los datos solicitados");
+      }
+
+      
+   
       
                
 }
