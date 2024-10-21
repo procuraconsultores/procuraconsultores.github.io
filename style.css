@@ -366,6 +366,8 @@ input, textarea, button {
     transform: scale(1);
   }
 }
+
+/*
 @font-face {
   font-family: "Gilroy";
   src: url("assets/fonts/Gilroy-SemiBold.woff2") format("woff2"), url("assets/fonts/Gilroy-SemiBold.woff") format("woff");
@@ -387,6 +389,8 @@ input, textarea, button {
   font-style: normal;
   font-display: swap;
 }
+  */
+
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
@@ -713,7 +717,7 @@ p {
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../../assets/img/portfolio/our-portfolio-bg.png);
+ /* background-image: url(../../assets/img/portfolio/our-portfolio-bg.png);*/
 }
 
 /* ----------------------------------
@@ -11599,7 +11603,7 @@ header.transparent.stop.header-2 .main-header-wraper {
   background-size: auto;
   background-repeat: no-repeat;
   animation: scale 3s linear infinite;
-  background-image: url(assets/img/about/company-skill-bg.png);
+  /*background-image: url(assets/img/about/company-skill-bg.png);*/
 }
 @media (min-width: 1200px) {
   .company-skill__content {
@@ -15710,7 +15714,7 @@ header.transparent.stop.header-2 .main-header-wraper {
   height: 1068.22px;
   background-size: auto;
   animation: scale 3s linear infinite;
-  background-image: url(assets/img/home-3/can-help-home-3-bg.png);
+ /* background-image: url(assets/img/home-3/can-help-home-3-bg.png);*/
 }
 @media (max-width: 1300px) {
   .can-help.can-help-home-3 {
@@ -16370,7 +16374,7 @@ header.transparent.stop.header-2 .main-header-wraper {
   mix-blend-mode: screen;
   background-size: cover;
   background-position: center;
-  background-image: url(assets/img/home-2/our-member-bg.png);
+ /* background-image: url(assets/img/home-2/our-member-bg.png);*/
 }
 .our-team.our-team-home-2 .container:after {
   content: inherit;
@@ -16392,7 +16396,7 @@ header.transparent.stop.header-2 .main-header-wraper {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #F3F3F2;
-  background-image: url(assets/img/portfolio/our-portfolio-bg.png);
+ /* background-image: url(assets/img/portfolio/our-portfolio-bg.png);*/
 }
 @media (max-width: 991px) {
   .our-team.our-porfolio:after {
@@ -17919,7 +17923,7 @@ header.transparent.stop.header-2 .main-header-wraper {
   background-repeat: no-repeat;
   background-position: center;
   background: #000;
-  background-image: url(assets/img/portfolio/our-portfolio-bg.png);
+ /* background-image: url(assets/img/portfolio/our-portfolio-bg.png);*/
 }
 .dark .our-team {
   background: #000 !important;
@@ -18110,7 +18114,7 @@ header.transparent.stop.header-2 .main-header-wraper {
   background-size: cover;
   background-position: center;
   background-color: #0E1E36;
-  background-image: url("assets/img/footer/footer-bg.png");
+ /* background-image: url("assets/img/footer/footer-bg.png");*/
 }
 .footer-1.footer_wrapper {
   z-index: -1;
@@ -18118,7 +18122,7 @@ header.transparent.stop.header-2 .main-header-wraper {
   background-size: cover;
   background-position: center;
   background-color: #0E1E36;
-  background-image: url("assets/img/home-5/footer_bg.png");
+  /*background-image: url("assets/img/home-5/footer_bg.png");*/
   position: relative;
 }
 .footer-1.footer_wrapper:before {
