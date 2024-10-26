@@ -107,7 +107,7 @@
                                     <!--<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>-->
                                     <li><a href="https://wa.me/522291324289?text=Necesito información de..." target="_blank" aria-label="Contacto de WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/victor-hugo-cruz-francisco-a310a0191?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="Contacto de Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/procura-consultores/" target="_blank" aria-label="Contacto de Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -209,16 +209,16 @@
 
                         <ul>
                             <li><a href="#" aria-label="Horarios"><i class="fal fa-clock"></i> Lun – Vie: 8.00 – 18.00</a></li>
-                            <li><a href="mailto:victor_cruz_86@hotmail.com" aria-label="Contacto de correo"><i class="icon-email"></i>victor_cruz_86@hotmail.com</a></li>
+                            <li><a href="mailto:contacto@procuraconsultores.com" aria-label="Contacto de correo" style="text-transform: lowercase;"><i class="icon-email"></i>contacto@procuraconsultores.com</a></li>
                             <li>
                                 <a href="#" class="header-contact d-flex align-items-center" aria-label="Contacto de WhatsApp">
                                     <div class="icon">
-                                        <i class="icon-call"></i>
+                                        <i class="fab fa-whatsapp"></i>
                                         <!-- <img src="assets/img/icon/phone-1.svg" alt=""> -->
                                     </div>
                                     <div class="text">
-                                        <span class="font-la mb-5 d-block fw-500">Whatsapp</span>
-                                        <h5 class="fw-500">+123 556 8824</h5>
+                                        <span style="color:#fff"><a href="https://wa.me/522291324289?text=Necesito información de..." style="color:#fff" target="_blank">Whatsapp</span>
+                                        <center><h5 class="fw-500" style="color:#fff">(+52)2291324289 </center></a></h5>
                                     </div>
                                 </a>
                             </li>
@@ -557,7 +557,7 @@
             </div>
         </div>
 
-        <div class=" our-porfolio__slider__2 mt-30 wow fadeInUp" data-wow-delay=".5s">
+        <div class=" our-porfolio__slider__2 mt-30 wow fadeInUp" data-wow-delay="1s">
             <div class="slider-item">
                 <div class="our-project__item overflow-hidden">
                     <img src="assets/img/portfolio/ahorros.webp" alt="">
@@ -695,7 +695,61 @@
     <section class="can-help can-help-home-3  can-help-home-4 bg-dark_white  section-padding overflow-hidden" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-xl-7">
+                
+
+                <div class="col-xl-6">
+                    <div class="contact-form pt-md-30 pt-sm-25 pt-xs-20 pb-md-40 pb-sm-35 pb-xs-30 pt-xl-30 pb-xl-50 pt-45 pr-xl-50 pl-md-40 pl-sm-30 pl-xs-25 pr-md-40 pr-sm-30 pr-xs-25 pl-xl-50 pr-85 pb-60 pl-85 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="contact-form__header mb-sm-35 mb-xs-30 mb-40">
+                            <h6 class="sub-title fw-500 color-primary text-uppercase mb-15">Quiero saber más... ¿y ahora qué sigue?
+                                Solicita detalles
+                                </h6>
+                            <h3 class="title color-d_black">¡Hola!</h3>
+                            <p style="font-size: 10px;">Nos dara mucho gusto ponernos en contacto contigo</p>
+                        </div>
+
+                            <div class="single-personal-info">
+                                <input type="text" id="txtNombre" placeholder="Nombre" value="">
+                            </div>
+                            <div class="single-personal-info">
+                                <input type="text" id="txtEmpresa" placeholder="Empresa" value="">
+                            </div>
+                            <div class="single-personal-info">
+                                <input type="text" id="txtTelefono" placeholder="Teléfono" value="">
+                            </div>
+                          
+                            <div class="single-personal-info">
+                                <input type="email" id="txtCorreo" placeholder="Correo" value="">
+                            </div>
+
+                            <div class="single-personal-info">
+                                <input type="text" id="txtPais" placeholder="País" value="">
+                            </div>
+
+                            <div class="single-personal-info">
+                                <input type="text" id="txtEstado" placeholder="Estado" value="">
+                            </div>
+
+                            <div class="single-personal-info">
+                                <textarea id="txtComentario" placeholder="Cuéntanos ¿Cuál es tu necesidad?" value=""></textarea>
+                            </div>
+
+                            <div class="single-personal-info">
+                                <select id="txtTipo" name="estado" class="contact-form-select">
+                                    <option value="">¿Para quien buscas capacitación?</option>
+                                    <option value="Para mi">Para mi</option>
+                                    <option value="Para un grupo de mi empresa">Para un grupo de mi empresa</option>
+                                    
+                                </select>
+                            </div>
+
+                            <button type="submit" class="theme-btn btn-sm btn__2" onclick="enviarCorreo()">Enviar <i class="far fa-chevron-double-right"></i></button>
+                  
+                    </div>
+                </div>
+
+
+
+                <div class="col-xl-6">
                     <div class="can-help__content  mb-sm-40 mb-xs-40 mb-md-45 mb-lg-50 wow fadeInUp" data-wow-delay=".3s">
                         <h2 class="title color-d_black mb-sm-15 mb-xs-10 mb-20">¿Por qué elegirnos?</h2>
 
@@ -747,62 +801,15 @@
                                 </div>
                                 <div class="text">
                                     <span class="font-la mb-10 d-block fw-500 color-d_black">Envíenos un correo</span>
-                                    <h5 class="fw-500 color-d_black">victor_cruz_86@hotmail.com</h5>
+                                    <h5 class="fw-500 color-d_black">contacto@procuraconsultores.com</h5>
                                 </div>
                             </a>-->
                         </div>
                     </div>
                 </div>
 
-                <div class="col-xl-5">
-                    <div class="contact-form pt-md-30 pt-sm-25 pt-xs-20 pb-md-40 pb-sm-35 pb-xs-30 pt-xl-30 pb-xl-50 pt-45 pr-xl-50 pl-md-40 pl-sm-30 pl-xs-25 pr-md-40 pr-sm-30 pr-xs-25 pl-xl-50 pr-85 pb-60 pl-85 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="contact-form__header mb-sm-35 mb-xs-30 mb-40">
-                            <h6 class="sub-title fw-500 color-primary text-uppercase mb-15">Quiero saber más... ¿y ahora qué sigue?
-                                Solicita detalles
-                                </h6>
-                            <h3 class="title color-d_black">¡Hola!</h3>
-                            <p style="font-size: 10px;">Nos dara mucho gusto ponernos en contacto contigo</p>
-                        </div>
 
-                            <div class="single-personal-info">
-                                <input type="text" id="txtNombre" placeholder="Nombre" value="">
-                            </div>
-                            <div class="single-personal-info">
-                                <input type="text" id="txtEmpresa" placeholder="Empresa" value="">
-                            </div>
-                            <div class="single-personal-info">
-                                <input type="text" id="txtTelefono" placeholder="Teléfono" value="">
-                            </div>
-                          
-                            <div class="single-personal-info">
-                                <input type="email" id="txtCorreo" placeholder="Correo" value="">
-                            </div>
 
-                            <div class="single-personal-info">
-                                <input type="text" id="txtPais" placeholder="País" value="">
-                            </div>
-
-                            <div class="single-personal-info">
-                                <input type="text" id="txtEstado" placeholder="Estado" value="">
-                            </div>
-
-                            <div class="single-personal-info">
-                                <textarea id="txtComentario" placeholder="Cuéntanos ¿Cuál es tu necesidad?" value=""></textarea>
-                            </div>
-
-                            <div class="single-personal-info">
-                                <select id="txtTipo" name="estado" class="contact-form-select">
-                                    <option value="">¿Para quien buscas capacitación?</option>
-                                    <option value="Para mi">Para mi</option>
-                                    <option value="Para un grupo de mi empresa">Para un grupo de mi empresa</option>
-                                    
-                                </select>
-                            </div>
-
-                            <button type="submit" class="theme-btn btn-sm btn__2" onclick="enviarCorreo()">Enviar <i class="far fa-chevron-double-right"></i></button>
-                  
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -845,7 +852,7 @@
             <div class="row justify-content-between">
                 <div class="col-md-6 col-xl-3">
                     <div class="single-footer-wid contact_widget">
-                        <h6 class="wid-title mb-30 color-white">Horario de atención</h6>
+                        <p class="wid-title mb-30 color-white">Horario de atención</p>
 
                         <div class="contact-wrapper pt-30 pr-30 pb-30 pl-30">
                             <div class="wid-contact pb-30 mb-25">
@@ -856,7 +863,7 @@
                                         </div>
 
                                         <div class="contact-info font-la color-white">
-                                            <p>Lun - Vie:  08am - 12pm</p>
+                                            <p>Lun - Vie:  08 am - 12 pm</p>
                                         </div>
                                     </li>
 
@@ -866,7 +873,7 @@
                                         </div>
 
                                         <div class="contact-info font-la color-white">
-                                            <p>Sab: 09am - 12pm</p>
+                                            <p>Sab: 09 am - 12 pm</p>
                                         </div>
                                     </li>
 
@@ -936,7 +943,7 @@
 
                 <div class="col-md-6 col-xl-3">
                     <div class="single-footer-wid">
-                        <h6 class="wid-title mb-30 color-white">Ubicación</h6>
+                        <p class="wid-title mb-30 color-white">Ubicación</p>
                         
                         <iframe title="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120595.34140266119!2d-96.23231612426315!3d19.168785574920456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c3414245ca78c5%3A0x18a4d642e936019b!2sHeroica%20Veracruz%2C%20Ver.%2C%20Mexico!5e0!3m2!1sen!2sbd!4v1726596444976!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
