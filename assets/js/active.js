@@ -346,7 +346,7 @@ Author: RRDevs
             slidesToShow: 4,
             infinite: true,
             slidesToScroll: 1,
-            autoplaySpeed: 800,
+            autoplaySpeed: 7000,
             responsive: [{
                     breakpoint: 1851,
                     settings: {
@@ -535,7 +535,7 @@ Author: RRDevs
             });
         };
 
-        $('.chart').easyPieChart({
+        /*$('.chart').easyPieChart({
             size: 80,
             barColor: "#FF9C00",
             rotate: 65,
@@ -544,7 +544,7 @@ Author: RRDevs
             trackColor: "#DEE1E3",
             lineCap: "circle",
             animate: 2000,
-        });
+        });*/
 
         /*** pricing table */
         var pricingMonthlyBtn = document.getElementById("monthly-btn"),
